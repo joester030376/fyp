@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     sidebar: {
-        open: true,
+        open: false,
         type: "CONTACT", //can be CONTACT, STARRED, SHARED
     }
 }
@@ -14,7 +14,7 @@ const slice = createSlice({
     initialState,
     reducers: {
         //Toggle Sidebar
-        toggleSidebar(state) {
+        toggleSidebar(state, action) {
             // if(state.sidebar){
             // state.sidebar.open = !state.sidebar.open;}
 
